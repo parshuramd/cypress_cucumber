@@ -6,13 +6,15 @@ const createEsbuildPlugin =
   require("@badeball/cypress-cucumber-preprocessor/esbuild").createEsbuildPlugin;
 
 module.exports = defineConfig({
+  videoCompression: false,
+
   e2e: {
-    defaultCommandTimeout : 10000,
+    defaultCommandTimeout: 10000,
     async setupNodeEvents(on, config) {
       const bundler = createBundler({
         plugins: [createEsbuildPlugin(config)],
       });
-
+      require("cypress-mochawesome-reporter/plugin")(on);
       on("file:preprocessor", bundler);
       await addCucumberPreprocessorPlugin(on, config);
 

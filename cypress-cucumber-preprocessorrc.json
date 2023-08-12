@@ -1,22 +1,14 @@
 {
-  "json": {
+  "html": {
     "enabled": true,
-    "formatter": ".bin/cucumber-json-formatter",
-    "output": "cypress/reports/json/cucumber-report.json"
+    "output": "cypress/reports/html/cucumber-report.html"
   },
-    "messages": {
-      "enabled": false,
-      "output": "jsonlogs/messages.ndjson"
-    },
-    "html": {
-      "enabled": true
-    },
-    "stepDefinitions": [
-      "[filepath]/**/*.{js,ts}",
-      "[filepath].{js,ts}",
-      "cypress/e2e/*.{js,ts}",
-      "[filepath]\\***.{js,ts}",
-      "[filepath].{js,ts}",
-      "cypress\\e2e\\*.{js,ts}"
-    ]
-  }
+  "stepDefinitions": [
+    "[filepath]/**/*.{js,ts}",
+    "[filepath].{js,ts}",
+    "cypress/e2e/*.{js,ts}",
+    "[filepath]\\***.{js,ts}",
+    "[filepath].{js,ts}",
+    "cypress\\e2e\\*.{js,ts}"
+  ]
+}
