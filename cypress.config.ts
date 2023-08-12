@@ -14,7 +14,6 @@ module.exports = defineConfig({
       const bundler = createBundler({
         plugins: [createEsbuildPlugin(config)],
       });
-      require("cypress-mochawesome-reporter/plugin")(on);
       on("file:preprocessor", bundler);
       await addCucumberPreprocessorPlugin(on, config);
 
