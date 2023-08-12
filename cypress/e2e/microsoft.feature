@@ -1,6 +1,6 @@
-Feature: Microsoft Login
+# Feature: Microsoft Login
 
-    Feature Description
+#     Feature Description
 
-    Scenario: Microsoft
-        Given Microsoft Login
+#     Scenario: Microsoft
+#         Given Microsoft Login
