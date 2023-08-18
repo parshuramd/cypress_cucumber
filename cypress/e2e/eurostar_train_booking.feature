@@ -9,3 +9,6 @@
 #         And User Continue as a guest
 #         Then User successfully reach to payment page and takes screenshot of booking details
   
+
+
+  
